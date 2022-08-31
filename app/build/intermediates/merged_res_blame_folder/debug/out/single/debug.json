@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.paging3withmutabledata.app-merged_res-74:/layout_activity_main.xml.flat",
+        "source": "com.example.paging3withmutabledata.app-main-76:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-pngs-69:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/xml_backup_rules.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/drawable-v24_rick_and_morty_placeholder.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/drawable-v24/rick_and_morty_placeholder.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/layout_activity_main.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/navigation_nav_main.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/navigation/nav_main.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/drawable-v24_ic_like_empty.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/drawable-v24/ic_like_empty.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-merged_res-74:/drawable-v24_ic_like.xml.flat",
+        "source": "/Users/macbook/.gradle/daemon/7.5.1/com.example.paging3withmutabledata.app-main-76:/drawable-v24/ic_like.xml"
+    }
+]

@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Paging3WithMutableData" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#FF191919</item>
+        <item name="colorOnPrimary">#FFFFFFFF</item>
+        <item name="colorSecondary">#FF6D6D6D</item>
+        <item name="android:statusBarColor">#FFFFFFFF</item>
+    </style>
+</resources>

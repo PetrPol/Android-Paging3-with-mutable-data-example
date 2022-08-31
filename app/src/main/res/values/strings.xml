@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Paging 3 with mutable data</string>
+
+    // Character list
+    <string name="character_list_empty_screen">No characters found</string>
+    <string name="character_list_error">You are not connected to internet.</string>
+    <string name="character_list_reload_button">Reload</string>
+</resources>

@@ -1,0 +1,19 @@
+fragment CharacterView on Character{
+    id
+    name
+    status
+    species
+    type
+    image
+}
+
+query GetCharacters($page: Int) {
+    characters(page: $page) {
+        info {
+            next
+        }
+        results {
+            ...CharacterView
+        }
+    }
+}
