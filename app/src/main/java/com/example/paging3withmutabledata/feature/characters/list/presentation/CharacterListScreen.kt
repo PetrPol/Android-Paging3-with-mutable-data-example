@@ -23,6 +23,7 @@ import com.example.paging3withmutabledata.R
 import com.example.paging3withmutabledata.feature.shared.core.presentation.ApplicationTheme
 import com.example.paging3withmutabledata.feature.shared.core.presentation.BaseHandleOfErrors
 import com.example.paging3withmutabledata.feature.shared.core.presentation.PaginatedLazyColumn
+import com.example.paging3withmutabledata.feature.shared.core.presentation.SearchFields
 import com.example.paging3withmutabledata.feature.shared.core.presentation.collectScreenState
 import com.example.paging3withmutabledata.feature.shared.core.presentation.views.Characters
 import com.example.paging3withmutabledata.feature.shared.pagination.presentation.EmptyState
@@ -76,6 +77,15 @@ fun ScreenContent(
             itemSpacing = 8.dp,
             itemKey = { it.id.value },
             contentPadding = PaddingValues(vertical = 8.dp, horizontal = 8.dp),
+            additionalTopItems = {
+                item {
+                    SearchFields.Default(
+                        query = screenState.query,
+                        hint = stringResource(id = R.string.character_search_hint),
+                        onValueChange = actions::queryChanged
+                    )
+                }
+            }
         ) { character ->
             Characters.ListItem(
                 character = character,
@@ -84,20 +94,26 @@ fun ScreenContent(
         }
 
         EmptyState {
-            Text(
+            Box(
                 modifier = Modifier.fillMaxSize(),
-                text = stringResource(R.string.character_list_empty_screen),
-                textAlign = TextAlign.Center,
-            )
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = stringResource(R.string.character_list_empty_screen),
+                    textAlign = TextAlign.Center,
+                )
+            }
         }
 
         OnError { error ->
             BaseHandleOfErrors(error, scaffoldState.snackbarHostState)
             swipeRefreshState.isRefreshing = false
 
-            if (itemCount==0) {
+            if (itemCount == 0) {
                 Box(
-                    modifier = Modifier.fillMaxSize().padding(horizontal = 16.dp),
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(horizontal = 16.dp),
                     contentAlignment = Alignment.Center
                 ) {
                     Column(

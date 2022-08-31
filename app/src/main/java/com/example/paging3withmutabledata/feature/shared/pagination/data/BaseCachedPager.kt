@@ -12,12 +12,11 @@ import kotlinx.coroutines.flow.combine
 
 abstract class BaseCachedPager<DataType : Any, IdKey : Any, Personalisation : Any>(
     coroutineScope: CoroutineScope,
-    private val pagingFactory: () -> DefaultPagingSource<DataType>,
 ) {
 
     private var pagingSource: DefaultPagingSource<DataType>? = null
     val pagingDataStream: Flow<PagingData<DataType>> by lazy {
-        Pager(PagingConfig(pageSize)) { pagingFactory().apply { pagingSource = this } }
+        Pager(PagingConfig(pageSize)) { createPagingSource().apply { pagingSource = this } }
             .flow
             .cachedIn(coroutineScope)
             .combine(getCachedInfoStream()) { pagingData, cachedPersonalisation ->
@@ -30,6 +29,8 @@ abstract class BaseCachedPager<DataType : Any, IdKey : Any, Personalisation : An
     abstract fun getCachedInfoStream(): Flow<Map<IdKey, Personalisation>>
 
     abstract fun mergeWithCache(item: DataType, cachedInfo: Map<IdKey, Personalisation>): DataType
+
+    abstract fun createPagingSource(): DefaultPagingSource <DataType>
 
     open fun createPagingHandle(): PagingHandle<DataType> {
         return PagingHandleImpl(this)

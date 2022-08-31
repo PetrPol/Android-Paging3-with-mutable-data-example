@@ -21,4 +21,8 @@ class CharacterListFragment : BaseFragment(), CharacterListActions {
     override fun refresh() {
         viewModel.refresh()
     }
+
+    override fun queryChanged(query: String) {
+        viewModel.queryChanged(query)
+    }
 }

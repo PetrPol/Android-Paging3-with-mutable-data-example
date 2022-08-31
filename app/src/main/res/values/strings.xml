@@ -5,4 +5,5 @@
     <string name="character_list_empty_screen">No characters found</string>
     <string name="character_list_error">You are not connected to internet.</string>
     <string name="character_list_reload_button">Reload</string>
+    <string name="character_search_hint">Search characters by name</string>
 </resources>

@@ -10,4 +10,6 @@ interface CharacterRemoteDataSource {
     suspend fun getCharacters(pagingRequest: PagingRequest): PagingResponse<Character>
 
     suspend fun setCharacterIsLiked(characterId: CharacterId, isLiked: Boolean)
+
+    suspend fun searchForCharacters(pagingRequest: PagingRequest, query: String): PagingResponse<Character>
 }

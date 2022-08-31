@@ -6,6 +6,7 @@ import com.example.paging3withmutabledata.feature.characters.list.domain.Charact
 import com.example.paging3withmutabledata.feature.characters.list.domain.CharacterRepository
 import com.example.paging3withmutabledata.feature.shared.core.presentation.ScreenStateViewModel
 import com.example.paging3withmutabledata.feature.shared.pagination.data.PagingHandle
+import com.example.paging3withmutabledata.feature.shared.pagination.data.SearchPagingHandle
 import kotlinx.coroutines.launch
 
 /**
@@ -16,12 +17,17 @@ class CharacterListViewModel(
 ) : ScreenStateViewModel<ScreenState>(ScreenState()) {
 
     init {
-        val charactersPagingHandle = characterRepository.getCharacterStream(viewModelScope)
+        val charactersPagingHandle = characterRepository.getCharacterSearchStream(viewModelScope)
         setState { copy(charactersPagingHandle = charactersPagingHandle) }
     }
 
     fun refresh(){
         screenState.charactersPagingHandle?.refresh?.invoke()
+    }
+
+    fun queryChanged(query: String){
+        screenState.charactersPagingHandle?.updateQuery?.invoke(query)
+        setState { copy(query = query) }
     }
 
     fun setCharacterIsLiked(characterId: CharacterId, isLiked: Boolean){
@@ -37,6 +43,7 @@ class CharacterListViewModel(
 }
 
 data class ScreenState(
-    val charactersPagingHandle: PagingHandle<Character>? = null,
+    val charactersPagingHandle: SearchPagingHandle<Character>? = null,
     val error: Throwable? = null,
+    val query: String = ""
 )

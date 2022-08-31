@@ -11,6 +11,7 @@ import com.example.paging3withmutabledata.feature.shared.pagination.data.PagingR
 import com.example.paging3withmutabledata.feature.shared.pagination.data.PagingResponse
 import com.example.paging3withmutabledata.networking.graphql.GetCharactersQuery
 import com.example.paging3withmutabledata.networking.graphql.fragment.CharacterView
+import com.example.paging3withmutabledata.networking.graphql.type.FilterCharacter
 
 class CharacterGraphQlDataSource(
     private val apolloClient: ApolloClient,
@@ -29,6 +30,20 @@ class CharacterGraphQlDataSource(
 
     override suspend fun setCharacterIsLiked(characterId: CharacterId, isLiked: Boolean) {
         // Call Api endpoint to store actual state of like
+    }
+
+    override suspend fun searchForCharacters(pagingRequest: PagingRequest, query: String): PagingResponse<Character> {
+        val response = apolloClient.query(
+            GetCharactersQuery(
+                page = Optional.presentIfNotNull(pagingRequest.nextPage),
+                filter = Optional.presentIfNotNull(FilterCharacter(name = Optional.presentIfNotNull(query)))
+            )
+        ).execute()
+        if (response.hasErrors()) throw NetworkException()
+        return PagingResponse(
+            response.data?.characters?.info?.next,
+            response.data?.characters?.results?.mapNotNull { it?.characterView?.toDomain() } ?: emptyList()
+        )
     }
 }
 

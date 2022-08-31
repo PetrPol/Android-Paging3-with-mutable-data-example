@@ -9,4 +9,6 @@ interface CharacterListActions {
     fun setCharacterIsLiked(characterId: CharacterId, isLiked: Boolean)
 
     fun refresh()
+
+    fun queryChanged(query: String)
 }
