@@ -33,7 +33,7 @@ import com.example.paging3withmutabledata.R
 object SearchFields {
 
     @Composable
-    fun Default(
+    fun Primary(
         modifier: Modifier = Modifier,
         query: String,
         hint: String,

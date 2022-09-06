@@ -10,11 +10,10 @@ import androidx.compose.runtime.staticCompositionLocalOf
 fun ApplicationTheme(content: @Composable () -> Unit) {
     MaterialTheme {
         CompositionLocalProvider(
-            LocalColors provides designSystemColors()
+            LocalColors provides designSystemColors(),
+            LocalTypography provides designSystemTypography()
         ) {
-            CompositionLocalProvider(LocalTypography provides designSystemTypography()) {
-                content()
-            }
+            content()
         }
     }
 }

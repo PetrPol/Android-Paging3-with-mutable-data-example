@@ -79,7 +79,7 @@ fun ScreenContent(
             contentPadding = PaddingValues(vertical = 8.dp, horizontal = 8.dp),
             additionalTopItems = {
                 item {
-                    SearchFields.Default(
+                    SearchFields.Primary(
                         query = screenState.query,
                         hint = stringResource(id = R.string.character_search_hint),
                         onValueChange = actions::queryChanged
